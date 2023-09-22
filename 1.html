@@ -1,1 +1,16 @@
 <div>holle word</div>
+/*
+后端返回文件流，前端处理
+export const importTemplateTable = () => {
+  return request({
+    url: "/idc/paiban/get-import-template",
+    method: "get",
+    responseType: "blob",//必选项,限制格式
+  });
+}
+const uploadExcle =async () => {
+  const data = await importTemplateTable()
+  const blob = new Blob([data.data], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
+  saveAs(blob, '排班表模板.xls');
+}
+*/
